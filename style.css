@@ -26,6 +26,7 @@ header {
   z-index: 1;
   margin-top: none;
   margin-bottom: 100px;
+  overflow: hidden;
 }
 
 h3 {
@@ -128,4 +129,15 @@ form {
   color: red;
   text-decoration: wavy;
   border: 2px solid whitesmoke;
+}
+
+.submission-thanks {
+  background-color: #4A314D;
+  padding: 120px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border: 2px solid whitesmoke;
+  text-align: center;
+  font-size: 3em;
 }
