@@ -14,12 +14,18 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #4A314D;
-  margin-bottom: 20px;
   padding: 10px;
   font-size: 3em;
   text-shadow: 3px 3px 3px red;
   border: 2px solid whitesmoke;
   border-radius: 20px;
+  position: fixed;
+  width: 98%;
+  margin: 0 auto;
+  height: 100px;
+  z-index: 1;
+  margin-top: none;
+  margin-bottom: 100px;
 }
 
 h3 {
@@ -62,7 +68,7 @@ main {
   font-size: 4rem;
 }
 
-.running, .coding, .rocking {
+.running, .coding, .rocking, .section1, .section2, .section3 {
   display: flex;
   margin: 10px;
 }
@@ -72,6 +78,7 @@ main {
   border: 2px solid whitesmoke;
   padding: 20px;
   font-size: 3em;
+  margin: 20px;
 }
 
 footer {
@@ -83,4 +90,42 @@ footer {
 
 .codingimg {
   order: 1
+}
+
+.matriximg {
+  order: -1
+}
+
+form {
+  background-color: #4A314D;
+  border: 2px solid whitesmoke;
+  padding: 45px;
+  font-size: 5em;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 150px;
+}
+
+#query {
+  padding: 20px;
+  width: 40%;
+  height: 80px;
+}
+
+.field {
+  font-size: 1em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #4A314D;
+  color: whitesmoke;
+  text-align: center;;
+}
+
+.field:hover {
+  color: red;
+  text-decoration: wavy;
+  border: 2px solid whitesmoke;
 }
