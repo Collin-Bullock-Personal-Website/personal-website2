@@ -71,7 +71,7 @@ main {
 
 .running, .coding, .rocking, .section1, .section2, .section3 {
   display: flex;
-  margin: 10px;
+  margin: 20px;
 }
 
 .textarea {
