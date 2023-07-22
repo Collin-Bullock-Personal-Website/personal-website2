@@ -14,12 +14,19 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #4A314D;
-  margin-bottom: 20px;
   padding: 10px;
   font-size: 3em;
   text-shadow: 3px 3px 3px red;
   border: 2px solid whitesmoke;
   border-radius: 20px;
+  position: fixed;
+  width: 98%;
+  margin: 0 auto;
+  height: 100px;
+  z-index: 1;
+  margin-top: none;
+  margin-bottom: 100px;
+  overflow: hidden;
 }
 
 h3 {
@@ -62,9 +69,9 @@ main {
   font-size: 4rem;
 }
 
-.running, .coding, .rocking {
+.running, .coding, .rocking, .section1, .section2, .section3 {
   display: flex;
-  margin: 20px;
+  margin: 10px;
 }
 
 .textarea {
