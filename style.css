@@ -55,6 +55,12 @@ main {
   display: flex;
   margin: 10px;
   margin-bottom: 20px;
+  display: flex;
+  padding-top: 150px;
+}
+
+.main {
+  padding-top: 150px;
 }
 
 .blurb {
@@ -95,17 +101,33 @@ form {
   border: 2px solid whitesmoke;
   display: flex;
   flex-direction: column;
-  padding-top: 130px;
+  padding-top: 150px;
   font-size: 3em;
   align-items: center;
 }
 
 .submission-thanks {
-  padding-top: 120px;
+  padding-top: 150px;
+  background-color: #4A314D;
+  border: 2px solid whitesmoke;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 2px 2px 2px red;
+}
+
+.field {
+  font-size: 1em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 10px;
 }
 
 .codingimg {
   order: 1;
   margin-left: 10px;
-  
+}
+
+.field:hover, .navlinks:hover {
+  background-color: black;
+  color: red;
 }
