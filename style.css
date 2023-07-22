@@ -89,7 +89,23 @@ footer {
   border: 2px solid whitesmoke;
 }
 
+form {
+  margin: 20px;
+  background-color: #6B6570;
+  border: 2px solid whitesmoke;
+  display: flex;
+  flex-direction: column;
+  padding-top: 130px;
+  font-size: 3em;
+  align-items: center;
+}
+
+.submission-thanks {
+  padding-top: 120px;
+}
+
 .codingimg {
   order: 1;
   margin-left: 10px;
+  
 }
