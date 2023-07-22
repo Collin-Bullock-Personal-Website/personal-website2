@@ -71,7 +71,7 @@ main {
 
 .running, .coding, .rocking, .section1, .section2, .section3 {
   display: flex;
-  margin: 10px;
+  margin: 20px;
 }
 
 .textarea {
@@ -79,7 +79,7 @@ main {
   border: 2px solid whitesmoke;
   padding: 20px;
   font-size: 3em;
-  margin: 20px;
+  margin: 10px;
 }
 
 footer {
@@ -90,54 +90,6 @@ footer {
 }
 
 .codingimg {
-  order: 1
-}
-
-.matriximg {
-  order: -1
-}
-
-form {
-  background-color: #4A314D;
-  border: 2px solid whitesmoke;
-  padding: 45px;
-  font-size: 5em;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding-top: 150px;
-}
-
-#query {
-  padding: 20px;
-  width: 40%;
-  height: 80px;
-}
-
-.field {
-  font-size: 1em;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background-color: #4A314D;
-  color: whitesmoke;
-  text-align: center;;
-}
-
-.field:hover {
-  color: red;
-  text-decoration: wavy;
-  border: 2px solid whitesmoke;
-}
-
-.submission-thanks {
-  background-color: #4A314D;
-  padding: 120px;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-  border: 2px solid whitesmoke;
-  text-align: center;
-  font-size: 3em;
+  order: 1;
+  margin-left: 10px;
 }
