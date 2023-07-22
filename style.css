@@ -64,7 +64,7 @@ main {
 
 .running, .coding, .rocking {
   display: flex;
-  margin: 10px;
+  margin: 20px;
 }
 
 .textarea {
@@ -72,6 +72,7 @@ main {
   border: 2px solid whitesmoke;
   padding: 20px;
   font-size: 3em;
+  margin: 10px;
 }
 
 footer {
@@ -82,5 +83,6 @@ footer {
 }
 
 .codingimg {
-  order: 1
+  order: 1;
+  margin-left: 10px;
 }
