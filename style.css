@@ -104,8 +104,18 @@ form {
   padding-top: 120px;
 }
 
+.field {
+  font-size: 1em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 10px;
+}
+
 .codingimg {
   order: 1;
   margin-left: 10px;
-  
+}
+
+.field:hover, .navlinks:hover {
+  background-color: black;
+  color: red;
 }
