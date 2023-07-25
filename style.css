@@ -178,13 +178,21 @@ form {
 }
 
 /* adding a media query so that on mobile devies the flexbox on the index page is a column instead of a row, and the text shrinks so it doesn't overflow and also the images shrink so that they're not distorted on the page */
-@media only screen and (max-width: 600px) {
-  main, header {
+@media only screen and (max-width: 1080px) {
+  main, header, footer {
     flex-direction: column;
-    font-size: .75em;
+    font-size: .69em;
   }
   img {
     width: 200px;
     height: 200px
   }
+  .textarea, .quote, .blurb {
+    font-size: 1em;
+  }
+
+  .portfolio-text, .field {
+    font-size: .5em;
+  }
+
 }
