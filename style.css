@@ -8,6 +8,10 @@ body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+/* I used flexbox a few times in this project.  But I first used it in the header */ 
+
+/* I also used a fixed position on my header to make it static, so even as users scroll the header remains on top. */
+
 header {
   display: flex;
   flex-direction: row;
@@ -20,13 +24,16 @@ header {
   border: 2px solid whitesmoke;
   border-radius: 20px;
   position: fixed;
-  width: 98%;
+  /* used calc for the width */
+  width: calc(100vw-1px);
   margin: 0 auto;
   height: 100px;
   z-index: 1;
   margin-top: none;
   margin-bottom: 100px;
   overflow: hidden;
+  /* used border box so that the padding and the border are included in the total width */
+  box-sizing: border-box;
 }
 
 h3 {
@@ -36,6 +43,7 @@ h3 {
   margin-left: 50px;
 }
 
+/* I used three types of CSS unites in this project.  Actually more cause in addition to percentage (%), pixels (px), and view port percentage (vw); I also used em to change font size, relatively, in a variety of places. */
 .index-image {
   width: 80%;
   margin: 0 auto;
@@ -59,7 +67,7 @@ main {
   padding-top: 150px;
 }
 
-.main {
+#aboutmain {
   padding-top: 150px;
 }
 
@@ -127,10 +135,12 @@ form {
   margin-bottom: 10px;
 }
 
-.codingimg {
+/* I was trying to use nth of type selectors, specifically "#aboutmain img:nth-of-type(2)", to select the 2nd image but that's not working for some dumb reason.  So I just used an id for this specific img and then used heirarchy to order it so it's on the opposite side of the other imgs */
+#codingimg {
   order: 1;
   margin-left: 10px;
 }
+
 
 .portfolio-div {
   padding-top: 150px;
@@ -161,4 +171,16 @@ form {
 
 .form-container {
   padding-top: 120px;;
+}
+
+/* adding a media query so that on mobile devies the flexbox on the index page is a column instead of a row, and the text shrinks so it doesn't overflow and also the images shrink so that they're not distorted on the page */
+@media only screen and (max-width: 600px) {
+  main, header {
+    flex-direction: column;
+    font-size: .75em;
+  }
+  img {
+    width: 200px;
+    height: 200px
+  }
 }
