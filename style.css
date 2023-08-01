@@ -18,7 +18,6 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #A6D0FF;
-  padding: 30px;
   font-size: 3em;
   text-shadow: 3px 3px 3px red;
   border: 2px solid whitesmoke;
@@ -32,6 +31,7 @@ header {
   margin-top: none;
   margin-bottom: 100px;
   overflow: hidden;
+  padding: 10px;
   /* used border box so that the padding and the border are included in the total width */
   box-sizing: border-box;
 }
@@ -179,13 +179,16 @@ form {
 
 /* adding a media query so that on mobile devies the flexbox on the index page is a column instead of a row, and the text shrinks so it doesn't overflow and also the images shrink so that they're not distorted on the page */
 @media only screen and (max-width: 1080px) {
-  main, header, footer {
+  header, footer {
     flex-direction: column;
     font-size: .69em;
+    padding: 8px;
   }
   img {
-    width: 200px;
-    height: 200px
+    width: 250px;
+    height: 200px;
+    margin-bottom: 8px;
+    display: relative;
   }
   .textarea, .quote, .blurb {
     font-size: 1em;
