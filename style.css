@@ -12,28 +12,14 @@ body {
 
 /* I also used a fixed position on my header to make it static, so even as users scroll the header remains on top. */
 
-header {
+nav {
+  width: 100vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #A6D0FF;
-  font-size: 3em;
-  text-shadow: 3px 3px 3px red;
-  border: 2px solid whitesmoke;
-  border-radius: 20px;
   position: fixed;
-  /* used calc for the width */
-  width: calc(100vw-1px);
   margin: 0 auto;
-  height: 100px;
-  z-index: 1;
-  margin-top: none;
-  margin-bottom: 100px;
-  overflow: hidden;
-  padding: 10px;
-  /* used border box so that the padding and the border are included in the total width */
-  box-sizing: border-box;
+  margin-bottom: none;
+  margin-top: -50px;
 }
 
 h3 {
@@ -45,18 +31,22 @@ h3 {
 
 /* I used three types of CSS unites in this project.  Actually more cause in addition to percentage (%), pixels (px), and view port percentage (vw); I also used em to change font size, relatively, in a variety of places. */
 .index-image {
-  width: 80%;
+  max-width: 50vw;
   margin: 0 auto;
   border-radius: 20px;
 }
 
 img {
-  width: 60vw;
+  width: 95vw;
   display: block;
   margin: 0 auto;
   border: 2px solid whitesmoke;
   margin-right: 20px;
   border-radius: 20px;
+}
+
+img:hover {
+  border: 2px solid red;
 }
 
 main {
@@ -148,10 +138,6 @@ form {
   padding-top: 150px;
 }
 
-.field:hover, .navlinks:hover {
-  background-color: black;
-  color: red;
-}
 
 .matriximg {
   order: -2;
@@ -175,6 +161,19 @@ form {
   padding-top: 120px;
   width: 50%;
   margin: 0 auto;
+}
+
+.headerimg {
+  max-width: 50%;
+  border: none;
+  align-items: center;
+  margin: 20px;
+  padding-top: 80px;
+}
+
+.headerimg:hover {
+  border: none;
+  background-color: red;
 }
 
 /* adding a media query so that on mobile devies the flexbox on the index page is a column instead of a row, and the text shrinks so it doesn't overflow and also the images shrink so that they're not distorted on the page */
