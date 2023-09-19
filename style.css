@@ -5,7 +5,7 @@
 body {
   background-color: #1A090D;
   color: whitesmoke;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: monospace;
 }
 
 /* I used flexbox a few times in this project.  But I first used it in the header */ 
@@ -18,36 +18,32 @@ nav {
   flex-direction: row;
   position: fixed;
   margin: 0 auto;
-  margin-bottom: none;
-  margin-top: -50px;
 }
 
-h3 {
-  display: inline;
-  justify-content: space-between;
-  color: whitesmoke;
-  margin-left: 50px;
-}
 
 /* I used three types of CSS unites in this project.  Actually more cause in addition to percentage (%), pixels (px), and view port percentage (vw); I also used em to change font size, relatively, in a variety of places. */
 .index-image {
   max-width: 50vw;
   margin: 0 auto;
   border-radius: 20px;
+  margin-top: 80px;
 }
 
 img {
   width: 95vw;
   display: block;
   margin: 0 auto;
-  border: 2px solid whitesmoke;
   margin-right: 20px;
   border-radius: 20px;
 }
 
-img:hover {
-  border: 2px solid red;
+#runningimg, #codingimg, #rockingimg {
+  width: 95vw;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 80px;
 }
+
 
 main {
   display: flex;
@@ -57,43 +53,21 @@ main {
   padding-top: 150px;
 }
 
-#aboutmain {
-  padding-top: 150px;
-}
-
-.blurb {
-  background-color: #A6D0FF;
-  border: 2px solid whitesmoke;
-  padding: 10px;
-  color: whitesmoke;
-  text-shadow: 1px 1px 1px black;
+#aboutMain {
+  padding-top: 180px;
 }
 
 .quote {
+  padding-top: 300px;
+  padding-right: 40px;
   font-size: 4rem;
-}
-
-.running, .coding, .rocking, .section1, .section2, .section3 {
-  display: flex;
-  margin: 20px;
-  justify-content: space-between;
-  text-shadow: 1px 1px 1px black;
-}
-
-.textarea {
-  background-color: #A6D0FF;
-  border: 2px solid whitesmoke;
-  padding: 20px;
-  font-size: 3em;
-  margin: 10px;
-  text-shadow: 1px 1px 1px black;
+  z-index: 1;
+  text-shadow: 3px 3px 3px black;
 }
 
 footer {
   text-align: center;
-  background-color: #A6D0FF;
-  text-shadow: 3px 3px 3px red;
-  border: 2px solid whitesmoke;
+  text-shadow: 3px 3px 3px black;
   margin-top: 30px;
 }
 
@@ -128,10 +102,6 @@ form {
 }
 
 /* I was trying to use nth of type selectors, specifically "#aboutmain img:nth-of-type(2)", to select the 2nd image but that's not working for some dumb reason.  So I just used an id for this specific img and then used heirarchy to order it so it's on the opposite side of the other imgs */
-#codingimg {
-  order: 1;
-  margin-left: 10px;
-}
 
 
 .portfolio-div {
@@ -164,11 +134,15 @@ form {
 }
 
 .headerimg {
-  max-width: 50%;
+  max-width: 40%;
   border: none;
   align-items: center;
   margin: 20px;
   padding-top: 80px;
+}
+
+.nameImg {
+  width: 40%;
 }
 
 .headerimg:hover {

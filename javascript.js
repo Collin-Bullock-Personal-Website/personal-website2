@@ -9,9 +9,9 @@ function renderAboutMain() {
   aboutMain.innerHTML= /* html */ `
   <img src="PICS/running5x7.jpg" id="runningimg" alt="running"/>
 
-  <img src="PICS/coding5x7.jpg" id="runningimg" alt="coding"/>
+  <img src="PICS/coding5x7.jpg" id="codingimg" alt="coding"/>
 
- <img src="PICS/rocking 5x7.jpg" id="runningimg" alt="rocking" />
+ <img src="PICS/rocking 5x7.jpg" id="rockingimg" alt="rocking" />
   `
   let runningButton = aboutMain.querySelector("#runningimg");
   runningButton.addEventListener("click", () => {
