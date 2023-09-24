@@ -5,7 +5,7 @@
 body {
   background-color: #1A090D;
   color: whitesmoke;
-  font-family: monospace;
+  font-family: "Edo"
 }
 
 /* I used flexbox a few times in this project.  But I first used it in the header */ 
@@ -13,162 +13,74 @@ body {
 /* I also used a fixed position on my header to make it static, so even as users scroll the header remains on top. */
 
 nav {
-  width: 100vw;
   display: flex;
-  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 3em;
+  align-items: center;
   position: fixed;
-  margin: 0 auto;
+ color: whitesmoke;
+ max-width: 100vw;
+}
+
+a:hover {
+  background-color: red;
+  color: whitesmoke;
 }
 
 
 /* I used three types of CSS unites in this project.  Actually more cause in addition to percentage (%), pixels (px), and view port percentage (vw); I also used em to change font size, relatively, in a variety of places. */
-.index-image {
-  max-width: 50vw;
-  margin: 0 auto;
-  border-radius: 20px;
-  margin-top: 80px;
-}
 
-img {
+.indeximg {
   width: 95vw;
   display: block;
   margin: 0 auto;
-  margin-right: 20px;
   border-radius: 20px;
+  margin-top: 30px;
 }
 
-#runningimg, #codingimg, #rockingimg {
+.nameImg {
+  width: 42%;
+}
+
+a {
+  color: whitesmoke;
+}
+
+
+#runningimg, #codingimg, #rockingimg, #puppybowl, #colorpicker, #email, #linkedin, #github {
   width: 95vw;
   padding: 20px;
   margin: 0 auto;
   border-radius: 80px;
 }
 
-
-main {
-  display: flex;
-  margin: 10px;
-  margin-bottom: 20px;
-  display: flex;
-  padding-top: 150px;
-}
-
-#aboutMain {
+#aboutMain, #portfolioMain, #contactMain, main {
   padding-top: 180px;
 }
 
-.quote {
-  padding-top: 300px;
-  padding-right: 40px;
-  font-size: 4rem;
-  z-index: 1;
-  text-shadow: 3px 3px 3px black;
-}
 
 footer {
   text-align: center;
   text-shadow: 3px 3px 3px black;
-  margin-top: 30px;
-}
-
-form {
-  background-color: #A6D0FF;
-  border: 2px solid whitesmoke;
-  display: flex;
-  flex-direction: column;
-  font-size: 3em;
-  align-items: center;
-  padding-top: 20px;
-  order: 2;
-}
-
-.submission-thanks {
-  background-color: #A6D0FF;
-  border: 2px solid whitesmoke;
-  margin-bottom: 10px;
-  text-align: center;
-  font-size: 3em;
-  text-shadow: 2px 2px 2px red;
-}
-
-.submission-container {
-  padding-top: 150px;;
-}
-
-.field {
-  font-size: 1em;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin-bottom: 10px;
-}
-
-/* I was trying to use nth of type selectors, specifically "#aboutmain img:nth-of-type(2)", to select the 2nd image but that's not working for some dumb reason.  So I just used an id for this specific img and then used heirarchy to order it so it's on the opposite side of the other imgs */
-
-
-.portfolio-div {
-  padding-top: 150px;
-}
-
-
-.matriximg {
-  order: -2;
-  width: 42vw;
-  margin: 10px;
-}
-
-.section1, .section2, .section3 {
-  font-size: 3em;
-}
-
-.portfolio-text {
-  background-color: #A6D0FF;
-  border: 2px solid whitesmoke;
-  margin-bottom: 10px;
-  padding: 10px;
-  margin: 20px;
-}
-
-.form-container {
-  padding-top: 120px;
-  width: 50%;
+  width: 60vw;
   margin: 0 auto;
 }
 
-.headerimg {
-  max-width: 40%;
-  border: none;
-  align-items: center;
-  margin: 20px;
-  padding-top: 80px;
-}
-
-.nameImg {
-  width: 40%;
-}
-
-.headerimg:hover {
-  border: none;
-  background-color: red;
-}
 
 /* adding a media query so that on mobile devies the flexbox on the index page is a column instead of a row, and the text shrinks so it doesn't overflow and also the images shrink so that they're not distorted on the page */
 @media only screen and (max-width: 1080px) {
-  header, footer {
+nav {
+    width: 100vw;
+    font-size: 1rem;
+    display: flex;
     flex-direction: column;
-    font-size: .69em;
-    padding: 8px;
+    padding: 90px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;;
   }
+
   img {
-    width: 250px;
-    height: 200px;
-    margin-bottom: 8px;
-    display: relative;
+    margin-top: 0;
   }
-  .textarea, .quote, .blurb {
-    font-size: 1em;
-  }
-
-  .portfolio-text, .field {
-    font-size: .5em;
-  }
-
-}
