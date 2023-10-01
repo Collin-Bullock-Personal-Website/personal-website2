@@ -2,6 +2,11 @@
   border-radius: 20px;
 }
 
+@font-face {
+  font-family: Edo;
+  src: url(/home/collinabullock/Coursework/Edo/edo.ttf);
+}
+
 body {
   background-color: #1A090D;
   color: whitesmoke;
@@ -70,7 +75,7 @@ footer {
 /* adding a media query so that on mobile devies the flexbox on the index page is a column instead of a row, and the text shrinks so it doesn't overflow and also the images shrink so that they're not distorted on the page */
 @media only screen and (max-width: 1080px) {
 nav {
-    width: 100vw;
+    width: 60vw;
     font-size: 1rem;
     display: flex;
     flex-direction: column;
@@ -79,8 +84,15 @@ nav {
     align-items: center;
     margin: 0 auto;
     position: relative;;
+    margin-bottom: 0;
+    font-size: 3em;
+    background-color: red;
   }
 
   img {
     margin-top: 0;
+  }
+
+  .nameImg {
+    width: 100%;
   }
