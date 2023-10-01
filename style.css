@@ -74,6 +74,10 @@ footer {
 
 /* adding a media query so that on mobile devies the flexbox on the index page is a column instead of a row, and the text shrinks so it doesn't overflow and also the images shrink so that they're not distorted on the page */
 @media only screen and (max-width: 1080px) {
+* {
+  font-family: Edo, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 nav {
     width: 60vw;
     font-size: 1rem;
