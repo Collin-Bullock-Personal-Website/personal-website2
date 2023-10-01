@@ -57,11 +57,12 @@ a {
 }
 
 #aboutMain, #portfolioMain, #contactMain, main {
-  padding-top: 120px;
+  padding-top: 100px;
   margin: 0 auto;
+  z-index: 2;
 }
 
-#runningRender, #codingRender, #rockingRender {
+#runningRender, #codingRender, #rockingRender, #puppyBowlRender, #colorPickerRender, #strangersThingsRender {
   display: flex;
   flex-direction: row;
   font-size: 3em;
@@ -112,7 +113,7 @@ nav {
     width: 100%;
   }
 
- #runningRender, #codingRender, #rockingRender {
+ #runningRender, #codingRender, #rockingRender, #puppyBowlRender, #colorPickerRender, #strangersThingsRender {
   flex-direction: column;
   align-items: center;
   font-size: 1em;

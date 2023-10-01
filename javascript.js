@@ -1,11 +1,19 @@
-// fixed the javascript output.  Did a node in the terminal to check it!
+
 const runningImg = document.getElementById("runningimg");
 const codingImg = document.getElementById("codingimg");
 const rockingImg = document.getElementById("rockingimg");
 
-const runningRender = document.getElementById("runningRender")
-const codingRender = document.getElementById("codingRender")
-const rockingRender = document.getElementById("rockingRender")
+const puppyBowlImg = document.getElementById("puppybowl");
+const colorPickerImg = document.getElementById("colorpicker");
+const strangersThingsImg = document.getElementById("strangersthings");
+
+const runningRender = document.getElementById("runningRender");
+const codingRender = document.getElementById("codingRender");
+const rockingRender = document.getElementById("rockingRender");
+
+const puppyBowlRender = document.getElementById("puppyBowlRender");
+const colorPickerRender = document.getElementById("colorPickerRender");
+const strangersThingsRender = document.getElementById("strangersThingsRender");
 
 runningImg.addEventListener("click", function(){
   if (runningRender.style.display === "none") {
@@ -30,6 +38,8 @@ rockingImg.addEventListener("click", function() {
     rockingRender.style.display = "none"
   }
 });
+
+
 
 
 

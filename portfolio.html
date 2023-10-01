@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Collin:  What has he made?</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <script src="javascript.js" defer></script>
 </head>
 
 <body>
-
-    <!-- I'm gonna use a flexbox in the header to align these all nice and pretty, with my name is larger font on the left and the link in smaller font on the right -->
 
     <nav>
       <img src="./PICS/collinbullockheader.png" alt="Collin A Bullock" class="nameImg">
@@ -20,15 +18,71 @@
       <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- Wanna create a subheader and then have three boxes underneath it advertising stuff I've built -->
+
     <div id="portfolioMain">
-    <a href="https://cerulean-hotteok-8a9a16.netlify.app/"><img src="PICS/puppybowl.jpg" id="puppybowl" alt="puppy bowl"></a>
-    <a href="https://brilliant-hotteok-0d199d.netlify.app/"><img src="PICS/color picker.jpg" id="colorpicker" alt="color picker"></a>
-    <a href="https://strangersthingscfrt.netlify.app/"><img src="PICS/stranger things card.jpg" id="strangersthings" alt="Stranger's Things"></a>
+
+      <div id="puppyBowlRender" style="display:none">
+        <img src="PICS/puppies.jpg" class="aboutPic" alt="Puppy Bowl"/>
+        <p>Puppy Bowl is a simple fetch and render app, capturing a collection of puppies from an API and dynamically rendering them to the dom with style and panache!  Also includes search functionality.  <a href="https://cerulean-hotteok-8a9a16.netlify.app/">Check out puppy bowl here.</a></p>
+      </div>
+
+    <img src="PICS/puppybowl.jpg" id="puppybowl" alt="puppy bowl">
+
+    <div id="colorPickerRender" style="display:none">
+      <p>Color Picker is a simple react app designed to showcase dynamic usage of routes and links in a react framework!  It also includes some very astheticlly pleasing CSS work, if Collin does say so himself. <a href="https://brilliant-hotteok-0d199d.netlify.app/">Check out color picker here.</a></p>
+      <img src="PICS/colors.jpg" class="aboutPic" alt="Color Picker"/>
+    </div>
+
+    <img src="PICS/color picker.jpg" id="colorpicker" alt="color picker"></a>
+
+    
+    <div id="strangersThingsRender" style="display:none">
+      <img src="PICS/stranger things CARTOON.jpg" class="aboutPic" alt="Stranger's Things"/>
+      <p>Stranger's Things is a Craigslist-esque site (don't call it a clone!) which features fetching from APIS, rendering to DOMS, token authentication, and much more!  <a href="https://strangersthingscfrt.netlify.app/">Check out Stranger's Things here.</a></p>
+    </div>
+    <img src="PICS/stranger things card.jpg" id="strangersthings" alt="Stranger's Things">
   </div>
+
+
     <footer>
       <h1>&copy; 2023 made with &hearts; in Chicago, IL</h1>
     </footer>
-    
+
+    <script>
+      
+      const puppyBowlImg = document.getElementById("puppybowl");
+      const colorPickerImg = document.getElementById("colorpicker");
+      const strangersThingsImg = document.getElementById("strangersthings");
+
+      const puppyBowlRender = document.getElementById("puppyBowlRender");
+      const colorPickerRender = document.getElementById("colorPickerRender");
+      const strangersThingsRender = document.getElementById("strangersThingsRender");
+
+      puppyBowlImg.addEventListener("click", function() {
+  if (puppyBowlRender.style.display === "none") {
+    puppyBowlRender.style.display = "flex"
+  } else {
+    puppyBowlRender.style.display = "none"
+  }
+});
+
+colorPickerImg.addEventListener("click", function() {
+  if (colorPickerRender.style.display === "none") {
+    colorPickerRender.style.display = "flex"
+  } else {
+    colorPickerRender.style.display = "none"
+  }
+});
+
+strangersThingsImg.addEventListener("click", function() {
+  if (strangersThingsRender.style.display === "none") {
+    strangersThingsRender.style.display = "flex"
+  } else {
+    strangersThingsRender.style.display = "none"
+  }
+})
+
+;
+    </script>
 </body>
 </html>
