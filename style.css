@@ -21,7 +21,7 @@ nav {
   position: fixed;
  color: whitesmoke;
  max-width: 100vw;
- margin-top: -110px;
+ margin-top: -90px;
 }
 
 a:hover {
@@ -41,7 +41,7 @@ a:hover {
 
 
 .nameImg {
-  width: 50%;
+  width: 40%;
 }
 
 a {
@@ -56,10 +56,20 @@ a {
   border-radius: 80px;
 }
 
-#aboutMain, #portfolioMain, #contactMain, #videosmain main {
-  padding-top: 100px;
+#aboutMain, #portfolioMain, #contactMain, #videosmain, main {
+  padding-top: 120px;
   margin: 0 auto;
   z-index: 2;
+}
+
+#videosmain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+iframe {
+  margin: 20px;
 }
 
 #runningRender, #codingRender, #rockingRender, #puppyBowlRender, #colorPickerRender, #strangersThingsRender {
