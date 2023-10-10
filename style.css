@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: Edo;
-  src: url(https://fonts.cdnfonts.com/css/edo);
+  src: "/home/collinabullock/Coursework/personalWebsite/Edo/edo.ttf";
 }
 
 body {
@@ -72,7 +72,7 @@ iframe {
   margin: 20px;
 }
 
-#runningRender, #codingRender, #rockingRender, #puppyBowlRender, #colorPickerRender, #strangersThingsRender {
+#runningRender, #codingRender, #rockingRender, #puppyBowlRender, #colorPickerRender, #strangersThingsRender, #simpsonsPediaRender {
   display: flex;
   flex-direction: row;
   font-size: 3em;
