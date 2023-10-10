@@ -49,7 +49,7 @@ a {
 }
 
 
-#runningimg, #codingimg, #rockingimg, #puppybowl, #colorpicker, #strangersthings, #email, #linkedin, #github {
+#runningimg, #codingimg, #rockingimg, #puppybowl, #colorpicker, #strangersthings, #simpsonsPedia, #email, #linkedin, #github {
   width: 95vw;
   padding: 20px;
   margin: 0 auto;
@@ -123,7 +123,7 @@ nav {
     width: 100%;
   }
 
- #runningRender, #codingRender, #rockingRender, #puppyBowlRender, #colorPickerRender, #strangersThingsRender {
+ #runningRender, #codingRender, #rockingRender, #puppyBowlRender, #colorPickerRender, #strangersThingsRender, #simpsonsPediaRender {
   flex-direction: column;
   align-items: center;
   font-size: 1em;
