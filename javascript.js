@@ -6,6 +6,7 @@ const rockingImg = document.getElementById("rockingimg");
 const puppyBowlImg = document.getElementById("puppybowl");
 const colorPickerImg = document.getElementById("colorpicker");
 const strangersThingsImg = document.getElementById("strangersthings");
+const simpsonsPediaImg = document.getElementById("simpsonsPedia")
 
 const runningRender = document.getElementById("runningRender");
 const codingRender = document.getElementById("codingRender");
@@ -14,6 +15,7 @@ const rockingRender = document.getElementById("rockingRender");
 const puppyBowlRender = document.getElementById("puppyBowlRender");
 const colorPickerRender = document.getElementById("colorPickerRender");
 const strangersThingsRender = document.getElementById("strangersThingsRender");
+const simpsonsPediaRender = document.getElementById("simpsonsPediaRender")
 
 runningImg.addEventListener("click", function(){
   if (runningRender.style.display === "none") {

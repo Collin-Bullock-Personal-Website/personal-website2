@@ -33,7 +33,7 @@
       <img src="PICS/simpsons-cartoon.jpg" class="aboutPic" alt="Stranger's Things"/>
       <p>SimpsonsPedia is a simple little app, made to work on fetching and rending from an API!  It displays a searchable list of characters, products, and episodes from The Simpsons!<a href="https://simpsonspedia.netlify.app/">Check out SimpsonsPedia here.</a></p>
     </div>
-    <img src="PICS/simpsons pedia card.jpg" id="strangersthings" alt="Stranger's Things">
+    <img src="PICS/simpsons pedia card.jpg" id="simpsonsPedia" alt="SimpsonsPedia">
   </div>
 
       <div id="puppyBowlRender" style="display:none">
@@ -63,10 +63,13 @@
       const puppyBowlImg = document.getElementById("puppybowl");
       const colorPickerImg = document.getElementById("colorpicker");
       const strangersThingsImg = document.getElementById("strangersthings");
+      const simpsonsPediaImg = document.getElementById("simpsonsPedia")
 
       const puppyBowlRender = document.getElementById("puppyBowlRender");
       const colorPickerRender = document.getElementById("colorPickerRender");
       const strangersThingsRender = document.getElementById("strangersThingsRender");
+      const simpsonsPediaRender = document.getElementById("simpsonsPediaRender")
+      
 
       puppyBowlImg.addEventListener("click", function() {
   if (puppyBowlRender.style.display === "none") {
@@ -90,9 +93,18 @@ strangersThingsImg.addEventListener("click", function() {
   } else {
     strangersThingsRender.style.display = "none"
   }
-})
+});
 
-;
+simpsonsPediaImg.addEventListener("click", function() {
+  if (simpsonsPediaRender.style.display === "none") {
+    simpsonsPediaRender.style.display = "flex"
+  } else {
+    simpsonsPediaRender.style.display = "none"
+  }
+});
+
+
+
     </script>
 </body>
 </html>
