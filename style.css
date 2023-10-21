@@ -66,10 +66,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 iframe {
-  margin: 20px;
+  margin: 10px;
+  padding: 10px;
 }
 
 #runningRender, #codingRender, #rockingRender, #puppyBowlRender, #colorPickerRender, #strangersThingsRender, #simpsonsPediaRender {
